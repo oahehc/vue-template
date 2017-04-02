@@ -32,17 +32,23 @@
     <h2>font-awesome</h2>
     <i class="fa fa-address-book"
        aria-hidden="true"></i>
+    <h2>Vuex</h2>
+    <p>Current user: {{getUser}}</p>
   </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
 export default {
   name: 'hello',
   data() {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
-  }
+  },
+  computed: {
+    ...mapGetters(['getUser']),
+  },
 }
 </script>
 
