@@ -1,0 +1,8 @@
+@import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../../node_modules/bootstrap-vue/dist/bootstrap-vue.css';
+@import '../../node_modules/font-awesome/css/font-awesome.css';
+@import './variable.scss';
+body {
+    font-family: 'calibri', '微軟正黑體';
+    background: lighten($color, 40%);
+}
