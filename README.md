@@ -1,13 +1,13 @@
 ### This template is base on vue-cli webpack template, and modify few place list as below. you can check original version here [vuejs-template](http://vuejs-templates.github.io/webpack/)
-- add src/js/ for javascript file
-- add src/style/ for scss|scc file
+- create src/js/ for javascript file
+- create src/style/ for scss|scc file
 - add sass-loader
-- add bootstrap-vue font-awesome  package 
-- combine build/ and config/ folder
+- add bootstrap-vue & font-awesome & lodash 
+- combine build/ and config/ folder for all config setting
 - add vuex
-- nightwatch adjust 
+- nightwatch adjust
     - add phantomjs/firefox test
-    - add dev test to prevent nightwatch restart server during developing
+    - add dev test mode to prevent nightwatch restart server during developing
     - add test time on report
 ---
 
