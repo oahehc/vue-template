@@ -52,7 +52,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import '../style/main.scss';
 .hello {
   text-align: center;
