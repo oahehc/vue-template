@@ -41,6 +41,7 @@
 import { mapGetters } from 'vuex';
 export default {
   name: 'hello',
+  props: {},
   data() {
     return {
       msg: 'Welcome to Your Vue.js App'
@@ -49,6 +50,17 @@ export default {
   computed: {
     ...mapGetters(['getUser']),
   },
+  watch: {},
+  methods: {},
+  components: {},
+  beforeCreate() { },
+  created() { },
+  beforeMount() { },
+  mounted() { },
+  beforeUpdate() { },
+  updated() { },
+  beforeDestroy() { },
+  destroyed() { },
 }
 </script>
 
