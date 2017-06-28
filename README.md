@@ -60,6 +60,10 @@ yarn e2e:ff
 yarn e2eDev
 yarn e2eDev:phantom
 yarn e2eDev:ff
+# run e2e test by tag
+yarn e2eDev -- --tag tagName
+#run e2e test by testcase
+yarn e2eDev -- --test test/e2e/specs/fileName.js --testcase testcaseName
 # run unit tests
 yarn unit
 # run all tests
