@@ -10,9 +10,9 @@
         "e2e": "node test/e2e/runner.js",
         "e2e:phantom": "node test/e2e/runner.js --env phantomjs",
         "e2e:ff": "node test/e2e/runner.js --env firefox",
-        "e2eDev": "nightwatch --config test/e2e/nightwatch.conf.js --env chrome --skiptags sample",
-        "e2eDev:ff": "nightwatch --config test/e2e/nightwatch.conf.js --skiptags sample",
-        "e2eDev:phantom": "nightwatch --config test/e2e/nightwatch.conf.js --env phantomjs --skiptags sample",
+        "e2eDev": "nightwatch --config test/e2e/nightwatch.conf.js --env chrome",
+        "e2eDev:ff": "nightwatch --config test/e2e/nightwatch.conf.js",
+        "e2eDev:phantom": "nightwatch --config test/e2e/nightwatch.conf.js --env phantomjs",
         "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
         "test": "npm run unit && npm run e2e",
         "cleanReport": "rimraf test/e2e/reports/**/* & rimraf test/unit/coverage/**/*"

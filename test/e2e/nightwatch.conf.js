@@ -1,9 +1,10 @@
-require('babel-register')
-const config = require('../../config')
+require('babel-register');
+const config = require('../../config');
 const phantomjs = require('phantomjs-prebuilt');
 const seleniumServer = require('selenium-server');
 const chromeDriver = require('chromedriver');
 const geckoDriver = require('geckodriver');
+
 const currentTime = (new Date()).toISOString().replace(/:/g, '\'').replace(/\./g, '_');
 
 module.exports = {
@@ -22,7 +23,7 @@ module.exports = {
         cli_args: {
             'webdriver.chrome.driver': chromeDriver.path,
             'webdriver.gecko.driver': geckoDriver.path,
-        }
+        },
     },
 
     test_settings: {
@@ -37,7 +38,8 @@ module.exports = {
             },
             globals: {
                 devServerURL: `http://localhost:${(process.env.PORT || config.dev.port)}`,
-            }
+            },
+            skip_testcases_on_fail: false,
         },
 
         phantomjs: {
@@ -69,5 +71,5 @@ module.exports = {
                 acceptSslCerts: true,
             },
         },
-    }
-}
+    },
+};
